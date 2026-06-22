@@ -1,0 +1,20 @@
+{
+  "timeframe": "day",
+  "posts_per_sub": 12,
+  "comments_per_post": 4,
+  "min_score": 20,
+  "subreddits": [
+    { "name": "ThrowingFits", "min_score": 15 },
+    { "name": "BuyItForLife", "min_score": 100 },
+    { "name": "DesignPorn", "min_score": 200 },
+    { "name": "malefashionadvice", "min_score": 80 },
+    { "name": "streetwear", "min_score": 80 },
+    { "name": "rawdenim", "min_score": 30 },
+    { "name": "Workwear_fashion", "min_score": 15 },
+    {
+      "name": "todayilearned",
+      "min_score": 3000,
+      "keywords": ["fashion","clothing","denim","jeans","brand","design","logo","sneaker","shoe","watch","hat","jacket","suit","style","textile","workwear","streetwear","invented","origin","designer"]
+    }
+  ]
+}
