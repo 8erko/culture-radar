@@ -1,0 +1,32 @@
+name: Daily Reddit Mine
+
+on:
+  schedule:
+    - cron: "0 5 * * *"   # taeglich 05:00 UTC (~07:00 DE). Cron laeuft in UTC.
+  workflow_dispatch: {}    # erlaubt manuelles Starten per Knopf
+
+permissions:
+  contents: write          # noetig, damit der Job data/ committen darf
+
+jobs:
+  mine:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run miner
+        run: python reddit_miner.py
+
+      - name: Commit data
+        run: |
+          git config user.name  "culture-radar-bot"
+          git config user.email "actions@github.com"
+          git add data/
+          git commit -m "Reddit mine $(date -u +%Y-%m-%d)" || echo "nichts Neues"
+          git push
