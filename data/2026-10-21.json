@@ -1,0 +1,46 @@
+{
+  "generated_utc": "2026-10-21T09:43:06.429780Z",
+  "date": "2026-10-21",
+  "subreddits": [
+    {
+      "name": "ThrowingFits",
+      "posts": [],
+      "error": "fetch_failed"
+    },
+    {
+      "name": "BuyItForLife",
+      "posts": [],
+      "error": "fetch_failed"
+    },
+    {
+      "name": "DesignPorn",
+      "posts": [],
+      "error": "fetch_failed"
+    },
+    {
+      "name": "malefashionadvice",
+      "posts": [],
+      "error": "fetch_failed"
+    },
+    {
+      "name": "streetwear",
+      "posts": [],
+      "error": "fetch_failed"
+    },
+    {
+      "name": "rawdenim",
+      "posts": [],
+      "error": "fetch_failed"
+    },
+    {
+      "name": "Workwear_fashion",
+      "posts": [],
+      "error": "fetch_failed"
+    },
+    {
+      "name": "todayilearned",
+      "posts": [],
+      "error": "fetch_failed"
+    }
+  ]
+}
